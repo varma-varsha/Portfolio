@@ -33,7 +33,7 @@
 
 .navbar a:hover,
 .navbar a.active {
-  color: #a78bfa;
+  color: #a78bfa !important;
 }
 
 /* ==========================================================================
