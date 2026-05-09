@@ -9,91 +9,36 @@
     font-family: "Inter", sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
+html,
 body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
     background: #ffffff;
     color: #111;
-    overflow-x: hidden;
 }
 
 
-/* ========================= */
-/* NAVBAR */
-/* ========================= */
 
-.navbar {
-    width: fit-content;
-    height: 58px;
-    margin: 48px auto 0;
-    padding: 0 36px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 48px;
-
-    border-radius: 50px;
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid #eee8ff;
-
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
-
-    font-size: 18px;
-    font-weight: 600;
-
-    position: sticky;
-    top: 18px;
-    z-index: 999;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #666;
-    transition: 0.3s;
-}
-
-.navbar a:hover,
-.navbar a.active {
-    color: #a78bfa;
-}
 
 
 /* ========================= */
 /* RESPONSIVE */
 /* ========================= */
 
-/* Tablet */
+/* Tablet & Mobile */
 @media (max-width: 900px) {
-    .navbar {
-        width: 90%;
-        height: 52px;
-        padding: 0 20px;
-        gap: 24px;
-        font-size: 15px;
-    }
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-    .navbar {
-        width: 95%;
-        height: 50px;
-        padding: 0 16px;
-        gap: 16px;
-        font-size: 14px;
+    .about-title-section {
+        padding-top: 100px;
     }
 }
 
 
 /* Hero Section Container */
 .about-title-section {
-    padding-top: 40px;
-    /* Reduced to move heading up */
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-top: 100px;
     text-align: center;
     background-color: #fff;
     overflow: visible;
@@ -104,8 +49,9 @@ body {
     font-size: 2.2rem;
     font-weight: 800;
     margin-bottom: 50px;
-    /* Increased gap between heading and label */
     margin-top: 40px;
+    padding-left: 8%;
+    padding-right: 8%;
     color: #000;
     letter-spacing: -1px;
     position: relative;
@@ -117,6 +63,7 @@ body {
     width: 100%;
     position: relative;
     padding: 10px 0 30px 0;
+    overflow: hidden;
 }
 
 .skill-strip {

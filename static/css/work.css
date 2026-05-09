@@ -5,52 +5,22 @@
     font-family: "Inter", sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
+html,
 body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
     background: #ffffff;
     color: #111;
-    overflow-x: hidden;
 }
 
-/* NAVBAR */
-.navbar {
-    width: fit-content;
-    height: 58px;
-    margin: 48px auto 0;
-    padding: 0 36px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 48px;
-    border-radius: 50px;
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid #eee8ff;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
-    font-size: 18px;
-    font-weight: 600;
-    position: sticky;
-    top: 18px;
-    z-index: 999;
-}
 
-.navbar a {
-    text-decoration: none;
-    color: #666;
-}
-
-.navbar a:hover,
-.navbar a.active {
-    color: #a78bfa;
-}
 
 /* Hero Section Container */
 .about-title-section {
-    padding-top: 40px;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-top: 100px;
     text-align: center;
     background-color: #fff;
     overflow: visible;
@@ -62,6 +32,8 @@ body {
     font-weight: 800;
     margin-bottom: 50px;
     margin-top: 40px;
+    padding-left: 8%;
+    padding-right: 8%;
     color: #000;
     letter-spacing: -1px;
     position: relative;
@@ -73,6 +45,7 @@ body {
     width: 100%;
     position: relative;
     padding: 10px 0 30px 0;
+    overflow: hidden;
 }
 
 /* HERO IMAGE */
@@ -515,12 +488,8 @@ h2 {
 /* ===== RESPONSIVE ===== */
 
 @media (max-width: 900px) {
-    .navbar {
-        width: 90%;
-        height: 52px;
-        gap: 22px;
-        font-size: 15px;
-        padding: 0 18px;
+    .about-title-section {
+        padding-top: 100px;
     }
 
     .hero {

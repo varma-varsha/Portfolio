@@ -16,38 +16,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* NAVBAR */
-.navbar {
-  width: fit-content;
-  height: 58px;
-  margin: 0 auto;
-  padding: 0 36px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 48px;
-  border-radius: 50px;
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid #eee8ff;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
-  font-size: 18px;
-  font-weight: 600;
-  position: fixed;
-  top: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 999;
-}
 
-.navbar a {
-  text-decoration: none;
-  color: #666;
-}
-
-.navbar a:hover,
-.navbar a.active {
-  color: #a78bfa;
-}
 
 /* HERO */
 .hero {
@@ -982,13 +951,7 @@ h2 {
 /* ===== RESPONSIVE ===== */
 
 @media (max-width: 900px) {
-  .navbar {
-    width: 90%;
-    height: 52px;
-    gap: 22px;
-    font-size: 15px;
-    padding: 0 18px;
-  }
+
 
   .hero {
     flex-direction: column;
