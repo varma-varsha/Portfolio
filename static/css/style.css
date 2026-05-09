@@ -892,9 +892,25 @@ h2 {
   .projects-bg-text,
   .about-bg-text,
   .services-bg-text {
-    font-size: 40px;
-    letter-spacing: 6px;
-    top: 10px;
+    font-size: 45px;
+    letter-spacing: 8px;
+    top: 15px;
+  }
+
+  .projects,
+  .about,
+  .services {
+    padding: 60px 6%;
+  }
+
+  .projects-header,
+  .about-head,
+  .service-left {
+    margin-top: 0 !important;
+  }
+
+  .section-label {
+    margin-top: -20px !important;
   }
 
   .hero-text h1 {
